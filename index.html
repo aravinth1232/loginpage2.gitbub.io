@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon"> 
-    <title>Login | Sign up</title>
+    <title>Sign up</title>
 </head>
 <body>  
     
@@ -16,28 +16,65 @@
 
     <div class="all">
         <div>
-            <h1>Sign in</h1>
+            <h1>Register</h1>
         </div>
 
+        <form action="login.html" id="form">
+
+        <div class="new">
         <div class="my first">
             <span><i class="fa fa-user icon"></i></span>
-            <input type="text" name="username" id="user" autocomplete="off" >
-            
+            <input type="text" name="username" id="username" autocomplete="off" placeholder="Username" > 
         </div>
+
+        <div class="erro"></div>
+        </div>
+      
+        
+        <div class="new" id="new">
+    <div class="my first">
+            <span><i class="fa fa-envelope"></i></span>
+            <input type="text" name="email" id="email" autocomplete="off" placeholder="Email">
+                      
+        </div>
+
+        <div class="erro"></div>
+    </div>
+
+    <div class="new">
         <div class="my first">
             <span><i class="fa fa-key icon"></i></span>
-            <input type="password" name="password" id="password" >
+            <input type="password" name="password" id="password"  placeholder="Password">
+            
+        </div>
+        <div class="erro"></div>
+    </div>
+
+    <div class="new">
+        <div class="my first">
+            <span><i class="fa fa-key icon"></i></span>
+            <input type="password" name="cpassword" id="cpassword"  placeholder="Confirm Password">
         
         </div>
+        <div class="erro"></div>
+    </div>
+
+    
+      
+
+    
+
+
         <div  class="my but">
-            <button type="submit">Login</button>
+            <button type="submit" id="btn">Create your account</button>
         </div>
-        <div class="my links">
-            <a href="#" target="_blank" rel="noopener noreferrer">Forgot Password ?</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Sign up</a>
-        </div>
+     
+
+    </form>
 
     </div>
 
+
+    <script src="signupscript.js"></script>
 </body>
 </html>
