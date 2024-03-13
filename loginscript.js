@@ -66,7 +66,7 @@ function set(element,message){
     const error = parent.querySelector(".erro")
 
     error.innerText = message
-
+    error.style.color="rgb(238, 129, 129)";
     parent.classList.add('erro')
     parent.classList.remove('succ')
     
@@ -75,7 +75,7 @@ function set(element,message){
 
 }
 
-function sets(element){
+function sets(element,message){
 
  
 
@@ -84,8 +84,9 @@ function sets(element){
     const parent = first.parentElement;
     const error = parent.querySelector(".erro")
 
-    error.innerText ='';
+    error.innerText =message;
 
+    error.style.color="transparent";
     parent.classList.add('succ')
     parent.classList.remove('erro')
    
